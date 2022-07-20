@@ -13,12 +13,20 @@ This model is then compared to an Azure AutoML run.
 
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The data contains information about bank customers such as job, age, marital info, education, whether or not they had housing. We try to predict whether 
+a customer will subscribed a term deposit.
+The data was first fitted to a Logistic Regression model. The model managed an accuracy of 91%. After this, I ran an AutoMl, where the data was fitted to 40 models. The best performing model was MaxAbsScaler LightGBM with an accuracy of 91.44%, followed by MaxAbsScaler XGBoostClassifier with an accuracy of 91.2%.
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+### The Pipeline Architecture
+* Create a tabular dataset using TabularDatasetFactory. The data is from <a href = "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv">Dataset</a>
+* train python scriptcontains data that is used to clean the data, and enode categorical values.
+* Data is then split into train and test sets
+* A Logistic Regression model is then fitted to the data
+* I then used hyperdrive so as to tune hyperparameters(C and max_iter).
+
+The results of the hyperdrive are as shown below:<br>
+![]('images/hyperdrive.png')
 
 **What are the benefits of the parameter sampler you chose?**
 
