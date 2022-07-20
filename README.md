@@ -45,7 +45,7 @@ We configured the AutoML with the following parameters:
 These are the results of the AutoML:
 <img src="https://github.com/Kevin-Nduati/Udacity-Project/blob/master/images/automl.png">
 <br><br>
-The best model is:
+The best model is:<br>
 <img src="https://github.com/Kevin-Nduati/Udacity-Project/blob/master/images/model.png">
 
 ## Pipeline comparison
