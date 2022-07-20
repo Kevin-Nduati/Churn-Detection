@@ -26,7 +26,7 @@ The data was first fitted to a Logistic Regression model. The model managed an a
 * I then used hyperdrive so as to tune hyperparameters(C and max_iter).
 
 The results of the hyperdrive are as shown below:<br>
-![]('images/hyperdrive.png')
+<img src="https://github.com/Kevin-Nduati/Udacity-Project/blob/df9095aa232b556673ba7afde258016243336856/images/hyperdrive.png">
 
 **What are the benefits of the parameter sampler you chose?**
 
